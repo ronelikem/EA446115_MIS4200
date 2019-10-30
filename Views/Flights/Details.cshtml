@@ -1,0 +1,50 @@
+﻿@model EA446115_MIS4200.Models.Flight
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Flight</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Flyer.firstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Flyer.firstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.flightDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.flightDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.airlineID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.airlineID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.flightID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
